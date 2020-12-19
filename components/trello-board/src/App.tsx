@@ -1,10 +1,10 @@
 import Table from './components/Board'
-
+import { ChakraProvider } from "@chakra-ui/react"
 function App() {
   return (
-    <div className="App">
-        <Table />
-    </div>
+    <ChakraProvider>
+      <Table />
+    </ChakraProvider>
   );
 }
 

@@ -1,12 +1,13 @@
 import React from 'react'
-//@ts-ignore
 import Board from 'react-trello'
 import data from './data'
+import Card from '../Card'
 
 export default class Table extends React.Component {
   render() {
-    return <Board<{ dbId: number }>
+    return <Board
     data={data.mockTableData}
+    components={{Card}}
     />
   }
 }
